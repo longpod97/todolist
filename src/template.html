@@ -3,9 +3,46 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>To-Do List</title>
 </head>
 <body>
+
+    <dialog id="project-modal">
+        <H3>New Project:</H3>
+        <input type="text" placeholder="Project Name">
+        <button id="proj-submit">Submit</button>
+        <button id="proj-cancel">Cancel</button>
+    </dialog>
+    <div id="side-nav">
+        <h1>The To-Do List.</h1>
+        <button class="nav-buttons">Today's Deadlines</button>
+        <button class="nav-buttons">Upcoming Deadlines</button>
+        <button class="nav-buttons" id="add-proj-bttn">+  Add Project</button>
+        <button class="nav-buttons">+  Add Task</button>
+    
+        <h3 id="my-projects-title">My Projects</h3>
+        <button class="nav-buttons" id="example">- Example Project</button>
+
+    </div>
+
+    <div id="content">
+        <div id="proj-title">
+            <div id="title">Example Project</div>
+        </div>
+
+        <div id="grid-container">
+            <div id="proj-todos">
+                <div class="tile">
+                    <p class="tile-title">Item Title</p>
+                    <p class="tile-description">Description is this and that and basically it will like totally like tell the user what they need to do to complete the task innit.</p>
+                    <p class="tile-date">Due Date: 34/13/2023</p>
+                    <p class="tile-priority">Priotity: High</p>
+                    <p>Complete: <input type="checkbox" name="complete-or-not" id="complete"></p>
+                </div>
+            
+            </div>
+        </div>
+    </div>
     
 </body>
 </html>
