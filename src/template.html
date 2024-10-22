@@ -9,20 +9,43 @@
 
     <dialog id="project-modal">
         <H3>New Project:</H3>
-        <input type="text" placeholder="Project Name">
+        <input type="text" placeholder="Project Name" id="proj-input">
         <button id="proj-submit">Submit</button>
         <button id="proj-cancel">Cancel</button>
     </dialog>
+
+    <dialog id="task-modal">
+        <H3>New Task:</H3>
+        <label for="task-name-input">Task Name:</label><br>
+        <input type="text" placeholder="Task Name" id="task-name-input"><br><br>
+        <label for="task-description-input">Description:</label><br>
+        <input type="text" name="description" id="task-description-input" placeholder="Description of task..." height="30"><br><br>
+        <label for="project-select">Project:</label><br>
+        <select id="project-select">
+        
+        </select>
+        <label for="task-date-input">Date:</label><br>
+        <input type="date" name="date" id="task-date-input"><br><br>
+        <label for="priority">Priority:</label><br>
+        <select id="priority">
+            <option value="low">Low</option>
+            <option value="med">Medium</option>
+            <option value="high">High</option>
+        </select><br><br>
+        <button id="task-submit">Submit</button>
+        <button id="task-cancel">Cancel</button>
+    </dialog>
+
     <div id="side-nav">
         <h1>The To-Do List.</h1>
         <button class="nav-buttons">Today's Deadlines</button>
         <button class="nav-buttons">Upcoming Deadlines</button>
         <button class="nav-buttons" id="add-proj-bttn">+  Add Project</button>
-        <button class="nav-buttons">+  Add Task</button>
-    
-        <h3 id="my-projects-title">My Projects</h3>
-        <button class="nav-buttons" id="example">- Example Project</button>
+        <button class="nav-buttons" id="add-task-bttn">+  Add Task</button>
 
+        <h3 id="my-projects-title">My Projects</h3>
+        <div id="projects-container"></div>
+        </div>
     </div>
 
     <div id="content">

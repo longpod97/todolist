@@ -15,7 +15,7 @@
     box-sizing: border-box;
     margin: -8px;
     width: 350px;
-    height: 1000px;
+    height: 120%;
     background-color: #3D52A0;
     position: absolute;
 
@@ -47,14 +47,17 @@
 
 .nav-buttons {
     font-size: large;
-    border: 0;
+    border: 1px solid #dfdbe7;
     background-color: #3d52a000;
-    padding-top: 20px;
+    margin-top: 20px;
     color: #EDE8F5;
+    border-radius: 5px;
+    padding: 8px;
+
 }
 
-#example {
-    padding-left: 30px;
+.example {
+    margin-left: 30px;
 }
 
 #my-projects-title {
@@ -103,4 +106,14 @@
 
 .tile-description {
     margin-top: -20px;
+}
+
+
+.trash {
+    
+    margin-left: 250px;
+    background-color: #3D52A0;
+    color: #dfdbe7;
+    border: 0px;
+    
 }
